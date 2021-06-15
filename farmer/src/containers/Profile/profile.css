@@ -1,0 +1,70 @@
+.mbod {
+    border-radius: 2rem;
+    border-style: solid;
+    background-color: #ffffff;
+    border-color: #b3b3b3;
+    width: 70%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    transition: transform 0.2s ease;
+  }
+  
+  .mbod:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+  
+  .pico {
+    color: #404040;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mname {
+    font-size: 150%;
+  }
+  
+  .btextp {
+    font-weight: bold;
+  }
+  .infobody {
+    text-align: left;
+    font-size: 120%;
+    padding: 2%;
+    padding-left: 5%;
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+  }
+  
+  .addtext {
+    word-break: break-all;
+  }
+  
+  .grp {
+    margin-top: 1%;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    [class*="mbod"] {
+      width: 90%;
+    }
+    [class*="grp"] {
+      margin-top: 3.5%;
+    }
+    [class*="infobody"] {
+      margin-top: 3.5%;
+      padding-left: 2%;
+    }
+    [class*="btnn"] {
+      padding-left: 14%;
+      padding-right: 14%;
+    }
+  }
+  
+.btnLink {
+    text-decoration:none;
+    color: rgb(66, 64, 64);
+    font-weight: 500;
+  }
+.btnLink :hover {
+ text-decoration: none;
+}  

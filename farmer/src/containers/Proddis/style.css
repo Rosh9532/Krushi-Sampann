@@ -1,0 +1,12 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .heading {
+    font-size: 120%;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+  }
+  

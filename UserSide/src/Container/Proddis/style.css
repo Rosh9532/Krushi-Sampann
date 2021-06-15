@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .headingg {
+    font-size: 120%;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+     text-align: left;
+  }
+  
+  .productContainer{
+    color: black ;
+
+  }
+  .productContainer ::after{
+    text-decoration: none;
+  }

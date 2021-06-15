@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+.cmain {
+  font-family: 'Ubuntu';
+  margin-right:1rem;
+  margin-top: 1rem;
+  width: 16rem;
+ border-radius: 1rem;
+}
+.cmain:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+.cimg {
+  border-radius: 1rem;
+  margin: 0%;
+  margin-top: 8%;
+  text-align: center;
+  max-height: 120px;
+  /* object-fit: contain; */
+}
+.cimg:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.ctitle {
+  text-align: left;
+  font-size: 110%;
+  font-weight: bold;
+
+  color: #247209;
+}
+.cdes {
+  text-align: left;
+  font-style: italic;
+  font-size: 80%;
+  max-height: 20%;
+  padding-bottom: 2 px;
+}
+.cfeat {
+  text-align: left;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 1rem;
+  font-size: 80%;
+}
+.cfeat:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.cbtm {
+  padding: 10px;
+  border-color: #000;
+  border-radius: 50%;
+}
+.bttn {
+  margin: 0px;
+    border-radius: 2rem;
+    padding: 10px;
+    font-size: 90%;
+    font-weight: bold;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-style: solid !important;
+}
+.cfootl {
+  margin-top: 20px;
+  font-size: 80%;
+  font-weight: bold;
+  color: gray;
+  text-align: left;
+}
+.cfootr {
+  margin-top: 20px;
+  font-size: 80%;
+  font-weight: bold;
+  color: gray;
+  text-align: right;
+}

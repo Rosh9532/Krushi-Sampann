@@ -1,0 +1,52 @@
+.heading {
+    font-size: 125%;
+    padding: 10px;
+    padding-left: 5%;
+    font-weight: bold;
+    color: white;
+    border-radius: 2rem;
+    margin: 3%;
+    margin-top: 5%;
+    background-color: #27343a;
+  }
+  .cb {
+    padding: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerr {
+    margin-top: 5%;
+    background-color: #ebeee7;
+    padding-top: 10px;
+    width: 100%;
+    border-radius: 1rem;
+  }
+  
+  .fhcard {
+    font-size: 150%;
+    margin-top: 13px;
+    font-weight: bold;
+  }
+  
+  .ico {
+    color: #53a653 !important;
+  }
+  .icoBlack {
+    color: #000000c9 !important;
+    
+  }
+  .fcard {
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+    border-radius: 1rem;
+    margin: 4%;
+    transition: transform 0.2s ease;
+  }
+  
+  .fcard:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+    transform: scale(1.1);
+  }

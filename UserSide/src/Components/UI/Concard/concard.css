@@ -1,0 +1,39 @@
+.mbody {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 1%;
+    border-radius: 1rem !important;
+    padding: 0%;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 22, 0.18);
+  }
+  .cardh {
+    background-color: #53a653 ;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 120%;
+    /* border-radius: 1rem 1rem 0rem 0rem !important;*/
+  }
+  .btl {
+    text-align: left;
+  }
+  .boldtext {
+    font-weight: bold;
+  }
+  .cfoot {
+    color: grey;
+    font-weight: bold;
+    margin-top: 1%;
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="mbody"] {
+      margin-bottom: 5%;
+      width: 100%;
+    }
+    [class*="btl"] {
+      margin-top: 3%;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

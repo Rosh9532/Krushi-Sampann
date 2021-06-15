@@ -1,0 +1,19 @@
+.paper {
+   display:flexbox;
+   border-radius: 15px 15px 15px 15px;
+   margin: auto;
+     width:70%;
+     height: 80%;
+     background-color:rgb(252, 252, 252);
+     box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2);
+
+}
+
+.header {
+text-align: center;
+}
+
+.center{
+ display: flex;
+ justify-content: center;
+}

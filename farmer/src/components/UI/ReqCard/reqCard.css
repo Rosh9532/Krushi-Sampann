@@ -1,0 +1,38 @@
+.mbody {
+    text-align: left;
+    width: 48%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    border-radius: 1rem;
+    padding: 0%;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 22, 0.18);
+    transition: transform 0.2s ease;
+  }
+  .cardh {
+    background-color: #53a653;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 120%;
+    border-radius: 1rem 1rem 0rem 0rem !important;
+  }
+  
+  .mbody:hover {
+    transform: scale(1.02);
+  }
+  
+  .boldtext {
+    font-weight: bold;
+  }
+  .cfoot {
+    color: grey;
+    font-weight: bold;
+    margin-top: -1%;
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="mbody"] {
+      margin-bottom: 5%;
+      width: 100%;
+    }
+  }
+  

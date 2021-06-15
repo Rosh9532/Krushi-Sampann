@@ -1,0 +1,26 @@
+.paper {
+   display:flexbox;
+   border-radius: 15px 15px 15px 15px;
+   margin: auto;
+   /* margin-top: 5%;
+   margin-bottom: 5%; */
+     width:70%;
+     height: 80%;
+     background-color:rgb(252, 252, 252);
+     box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2);
+
+}
+
+.header {
+text-align: center ;
+font-size: 120%;
+padding: 10px;
+font-weight: bold;
+color: white;
+
+}
+
+.center{
+ display: flex;
+ justify-content: center;
+}

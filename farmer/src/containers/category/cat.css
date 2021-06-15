@@ -1,0 +1,62 @@
+.addButton {
+  display: flex;
+  float: right;
+  margin: 20px;
+  bottom: 2rem;
+  right: 1.7rem;
+position: fixed;
+z-index: 100;
+ 
+}
+  .scrolling-wrapper {
+    display: flex;
+    flex-wrap:wrap row;
+    overflow-x:hidden;
+  }
+    .cardd {
+      border: 2px solid gray;
+      flex: 0 0 auto;
+      transition: transform 0.2s ease;
+      margin: 4px;
+  }
+
+  .card:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.1); 
+    transform: scale(1.0005);
+  }
+
+  .scrolling-wrapper {
+  -webkit-overflow-scrolling:inherit;
+}
+
+
+
+.mcat{
+  width:6rem;
+  border-radius:1rem;
+}
+
+.cdcat{
+  width:6rem;
+  border-radius:1rem;
+  margin-top: 0px;
+  margin-right: 5px ;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.loader {
+margin: 5%;
+display: flex;
+justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  [class*="scrolling-wrapper"] {
+     
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x:auto;
+
+
+  }
+}
