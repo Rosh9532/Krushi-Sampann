@@ -47,7 +47,7 @@ const Products = (props) => {
                   product.locationWise[key].map(product =>
                     <Link
                       to={`/${product.slug}/${product._id}/p`}
-                      style={{ display: 'block' }}
+                      style={{ display: 'block' , textDecoration:"none" }}
                       className="productContainer">
 
                       <Prodcard name={product.name}
@@ -56,23 +56,6 @@ const Products = (props) => {
                         quantity={`${product.quantity} ${product.unit}`}
                         prize={product.price}
                         date="15 April" loc={product.district} />
-
-                      {/* <div className="productImgContainer">
-                      <img src={generatePublicUrl(product.productPicture[0].img)} alt="" />
-                    </div>
-                    <div className="productInfo">
-                      <div style={{ margin: '5px 0' }}>{product.name}</div>
-                      <div>
-                      
-                    &nbsp;&nbsp;
-                   
-                      </div>
-                      <div>{product.price}</div>
-                      <div>Uploaded By : {product.createdBy.firstName} {product.createdBy.lastName}</div>
-                      <div>Phone No : {product.createdBy.username}</div>
-                    </div> */}
-
-
 
                     </Link>
                   )

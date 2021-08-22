@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from '../../Components/Header'
 import { Container, Form, Row, Col, Button, Card, Navbar } from "react-bootstrap";
 import Input from "../../Components/UI/Input";
-import { Redirect } from "react-router-dom";
+//import { Redirect } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { signup } from "../../actions";
 import { useEffect } from "react";
@@ -21,7 +21,7 @@ const Signup = (props) => {
     const [cpassword, setCpassword] = useState("");
 
 
-    const [error, setError] = useState("");
+    //  const [error, setError] = useState("");
     const auth = useSelector((state) => state.auth);
     const user = useSelector((state) => state.user);
     const dispatch = useDispatch();
@@ -56,11 +56,12 @@ const Signup = (props) => {
     };
 
     if (auth.authenticate) {
-        return <Redirect to={`/`} />;
+        // return <Redirect to={`/`} />;
+        props.history.push('/signin');
     }
 
     if (user.loading) {
-        return <p>Loading...!</p>;
+        props.history.push('/signin');
 
     }
 
@@ -72,7 +73,7 @@ const Signup = (props) => {
                     <div className="header">
                         <Navbar bg="dark" className="heading">
                             Sign Up
-        </Navbar>
+                        </Navbar>
                     </div>
                     {user.message}
                     <Row style={{ marginTop: "50px" }}>
@@ -144,9 +145,9 @@ const Signup = (props) => {
                                     </Col>
                                 </Row>
                                 <Row >
-                                    <Button variant="success" type="submit" style={{display:"flex", float:"right"}}>
+                                    <Button variant="success" type="submit" className="authBtn"  style={{ display: "flex", float: "right" }}>
                                         Submit
-              </Button>
+                                    </Button>
                                 </Row>
                             </Form>
                         </Col>

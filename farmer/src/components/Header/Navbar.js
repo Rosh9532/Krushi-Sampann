@@ -84,7 +84,7 @@ const Navigation = (props) => {
 
           <Col xs={12} xl="auto" >
             <Form inline >
-              <Row>
+              <Row style={{display :"flex" , justifyContent:"right"}}>
                 <Col xs={7}>
                   <FormControl
                     type="text"

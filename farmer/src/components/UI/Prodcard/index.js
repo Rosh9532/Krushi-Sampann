@@ -16,7 +16,7 @@ import "./style.css";
 const Prodcard = (props) => {
 
     return (
-      <Col md={3}>
+      <Col >
       <Card  className="cmain">
         <Container>
           <Card.Img

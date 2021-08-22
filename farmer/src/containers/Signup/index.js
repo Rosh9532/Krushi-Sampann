@@ -2,15 +2,12 @@ import React, { useState } from "react";
 import Navbarr from '../../components/Header/Navbar'
 import { Container, Form, Row, Col, Button, Card, Navbar } from "react-bootstrap";
 import Input from "../../components/UI/Input";
-import { Redirect } from "react-router-dom";
+// import { Redirect ,withRouter } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { signup } from "../../actions";
+// import { signup } from "../../actions";
 import { useEffect } from "react";
+import axios from "../../helpers/axios"
 import './style.css';
-/**
- * @author
- * @function Signup
- **/
 
 const Signup = (props) => {
     const [firstName, setFirstName] = useState("");
@@ -24,10 +21,11 @@ const Signup = (props) => {
     const [postalCode, setPostalCode] = useState("");
     const [AadharNo, setAdharNo] = useState("");
 
-    const [error, setError] = useState("");
-    const auth = useSelector((state) => state.auth);
+    //   const [error, setError] = useState("");
+    //   const auth = useSelector((state) => state.auth);
     const user = useSelector((state) => state.user);
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
+    const [redirect, setRe] = useState(false);
 
     useEffect(() => {
         if (!user.loading) {
@@ -53,24 +51,36 @@ const Signup = (props) => {
             email,
             username,
             password,
-            address,  
+            address,
             city,
             district,
             postalCode,
             AadharNo
         };
+        // console.log(user)
+        // dispatch(signup(user));
 
+        axios.post('/farmerSignup', {
+            ...user
+        }).then(() => setRe(true));
 
-        dispatch(signup(user));
+        props.history.push('/signin');
+
+        if (!redirect) {
+            // return <Redirect to={`/signin`} />;
+            console.log("redirect");
+        }
+
     };
+    // console.log(auth.authenticate)
+    // console.log(user.authenticate)
+    // if (auth.authenticate) {
+    //     return <Redirect to={`/`} />;
+    // }
 
-    if (auth.authenticate) {
-        return <Redirect to={`/`} />;
-    }
-
-    if (user.loading) {
-        return <p>Loading...!</p>;
-    }
+    // if (user.authenticate) {
+    //     return <Redirect to={`/`} />;
+    // }
 
     return (
         <>
@@ -116,6 +126,7 @@ const Signup = (props) => {
                                             placeholder="Email"
                                             value={email}
                                             type="email"
+                                            required
                                             onChange={(e) => setEmail(e.target.value)}
                                         />
                                     </Col>
@@ -125,6 +136,7 @@ const Signup = (props) => {
                                             placeholder="Adhar Number"
                                             value={AadharNo}
                                             type="number"
+                                            required
                                             onChange={(e) => setAdharNo(e.target.value)}
                                         />
                                     </Col>
@@ -136,6 +148,7 @@ const Signup = (props) => {
                                             placeholder="Phone Number"
                                             value={username}
                                             type="number"
+                                            required
                                             onChange={(e) => setUsername(e.target.value)}
                                         />
                                     </Col>
@@ -145,6 +158,7 @@ const Signup = (props) => {
                                             placeholder="Password"
                                             value={password}
                                             type="password"
+                                            required
                                             onChange={(e) => setPassword(e.target.value)}
                                         />
                                     </Col>
@@ -192,9 +206,9 @@ const Signup = (props) => {
 
                                     </Col>
                                 </Row>
-                                <Button variant="success" type="submit">
+                                <Button variant="success" type="submit" className="authBtn">
                                     Submit
-              </Button>
+                                </Button>
 
 
                             </Form>

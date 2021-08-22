@@ -65,7 +65,7 @@ const Signin = (props) => {
                                    type="password"
                                    onChange={(e)=>setpassword(e.target.value)}
                                 />
-                                <Button variant="success" type="submit" style={{display:"flex", float:"right"}}>
+                                <Button variant="success" type="submit" className="authBtn" style={{display:"flex", float:"right"}}>
                                     Log In
                                 </Button>
                                 <br/>

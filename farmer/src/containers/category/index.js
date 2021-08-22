@@ -102,7 +102,7 @@ const Category = (props) => {
   return (
     <Layout > 
       <Container>
-      {!category.loading ?  
+      {category.loading ?  
      ( <div>
         <Row>
           <Col md-={12}>

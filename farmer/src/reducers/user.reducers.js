@@ -3,7 +3,8 @@ import { userconstants } from "../actions/constants"
 const initState={
     error:null,
     message:'',
-    loading:false
+    loading:false,
+    authenticate:false
 }
 
 export default(state=initState,action)=>{
@@ -11,13 +12,15 @@ export default(state=initState,action)=>{
         case userconstants.USER_REGISTER_REQUEST:
             state={
                 ...state,
-                loading:true
+                loading:true,
+                authenticate:false
             }
             break;
         case userconstants.USER_REGISTER_SUCCESS:   
             state={
             ...state,
             loading:false,
+            authenticate:true,
             message:action.payload.message
             }
         break;
@@ -25,6 +28,7 @@ export default(state=initState,action)=>{
             state={
             ...state,
             loading:false,
+            authenticate:false,
             message:action.payload.error
             }   
         break;

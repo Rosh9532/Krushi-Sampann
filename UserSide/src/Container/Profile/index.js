@@ -17,7 +17,6 @@ const Profile = (props) => {
             <Row style={{ display: "flex", justifyContent: "center" }}>
                 <MdAccountCircle fontSize="9rem" className="pico" />
                 <br />
-                <span className="mname"> Full Name</span>
             </Row>
 
             <hr />
@@ -75,20 +74,20 @@ const Profile = (props) => {
                 <hr />
                 <br />
                 <Row>
-                    <Col lg={10} xs={5}>
+                    <Col lg={11} xs={5}>
                         <Button
                             variant="outline-success"
                             style={{
                                 float: "right",
-                                marginBottom: "15px",
+                                marginBottom: "1rem",
                                 borderRadius: "1rem",
-                                width: "auto"
+                                width: "5rem"
                             }}
                         >
                             Back
               </Button>
                     </Col>
-                    <Col lg={2} xs={7}>
+                    {/* <Col lg={2} xs={7}>
                         <Button
                             variant="success"
                             style={{
@@ -99,9 +98,9 @@ const Profile = (props) => {
                                 width: "auto"
                             }}
                         >
-                            My Products
+                            Products
               </Button>
-                    </Col>
+                    </Col> */}
                 </Row>
             </div>
         </Container><br /><br /><br />

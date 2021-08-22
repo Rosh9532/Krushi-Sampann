@@ -65,3 +65,6 @@ select {
     padding-left: 20px;
     border-style: solid !important;
   }
+  .addButton :hover{
+    transform: scale(1.01);
+  }

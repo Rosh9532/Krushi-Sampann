@@ -1,19 +1,37 @@
 .paper {
-    display:flexbox;
+    display: flexbox;
     /* position: ce; */
- margin: auto;
- margin-top: 5%;
- padding-bottom: 5%;
- width:90%;
- height: 80%;
-background-color:rgb(252, 252, 252);
-box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2);
- 
- }
- 
- .heading {
-     text-align: center;
-     display: flex;
-     justify-content: center;
- }
- 
+    margin: auto;
+    margin-top: 5%;
+    padding-bottom: 5%;
+    width: 90%;
+    height: 80%;
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0px 2px 38px rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.addButton {
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: -4%;
+    justify-content: center;
+    border-radius: 2rem;
+    padding: 10px;
+    font-size: 90%;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-style: solid !important;
+
+}
+
+.wrapperr{
+    padding: 2rem;
+}

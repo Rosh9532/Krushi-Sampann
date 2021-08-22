@@ -5,7 +5,6 @@ import { Navbar } from "react-bootstrap";
 import "./style.css"
 import Concard from '../../Components/UI/Concard';
 import Layout from '../../Components/Layout';
-import UploadContract from './uploadContract';
 
 
 const ViewContract = (props) => {
@@ -58,14 +57,23 @@ const ViewContract = (props) => {
             ) : <h2>No contracts posted yet to show</h2>
         }
         </div>
-        <UploadContract/>
+      
+
       </>
     )
   }
+
+  const handleShow = ()=> props.history.push('/uploadContract');
+
+   
+  
+
   return (
     <>
       <Layout />
+      <button className="addButton" onClick={handleShow} style={{display:"flex", justifyContent:"center" ,}}>Add Contracts</button>
       {renderContracts()}
+
     </>
   )
 }

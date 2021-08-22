@@ -17,3 +17,10 @@ text-align: center;
  display: flex;
  justify-content: center;
 }
+
+.authBtn {
+  margin:10px;
+  padding:7px 30px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}

@@ -30,7 +30,7 @@ const ViewContract = (props) => {
           </Navbar>
 
         </div>
-        <div className="wrapperr">            {
+        <div className="wrapperrr">            {
           contracts.contracts.length > 0 ?
             contracts.contracts.map(
               contracts =>
@@ -57,9 +57,12 @@ const ViewContract = (props) => {
       </>
     )
   }
+
+  const handleShow = ()=> props.history.push('/uploadContract');
   return (
     <>
       <Layout />
+        <button className="addBtn" onClick={handleShow} style={{display:"flex", justifyContent:"center" ,}}>Add Contracts</button>
       {renderContracts()}
     </>
   )

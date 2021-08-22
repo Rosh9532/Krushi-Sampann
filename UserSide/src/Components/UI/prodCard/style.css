@@ -30,7 +30,14 @@
 .cdes {
   text-align: left;
   font-style: italic;
+
   font-size: 80%;
+  height: 3.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
 .cfeat {
   text-align: left;

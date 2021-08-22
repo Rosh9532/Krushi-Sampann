@@ -30,3 +30,13 @@
   margin-top: 8px;
   margin-bottom: 8px;
 }
+
+.nlink {
+  text-decoration: none;
+  color: rgb(54, 51, 51);
+  font-size: large;
+}
+.nlink:hover{
+  text-decoration: none;
+  color: rgb(99, 97, 97);
+}
