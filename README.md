@@ -29,6 +29,10 @@
 This project is developed as part of Academic Project.
 ### Developers-[Roshni Chauhan](https://github.com/Rosh9532),[Krushna Dahake](https://github.com/krish10k),[Tejashree Ghude](https://github.com/teju1001)
 
+## Demo
+
+![image](https://user-images.githubusercontent.com/68471779/134155506-f495d3a6-8dc1-47c4-a3ec-2d05f2c20673.png)
+
 
 
 
