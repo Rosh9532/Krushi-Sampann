@@ -32,6 +32,16 @@ This project is developed as part of Academic Project.
 ## Demo
 
 ![image](https://user-images.githubusercontent.com/68471779/134155506-f495d3a6-8dc1-47c4-a3ec-2d05f2c20673.png)
+![image](https://user-images.githubusercontent.com/68471779/134156254-2c187c41-004f-41a1-9fc6-0f0584f4e86b.png)
+![image](https://user-images.githubusercontent.com/68471779/134156351-9f9d47e8-08eb-433a-adc1-ac32d01d8b96.png)
+![image](https://user-images.githubusercontent.com/68471779/134156454-2469cec6-7a53-45aa-9d7b-f5f75a3e2f69.png)
+![image](https://user-images.githubusercontent.com/68471779/134156668-92ba6c37-4620-41c8-849a-17054a7607c4.png)
+![image](https://user-images.githubusercontent.com/68471779/134156720-044a621d-47d6-4382-91b4-04231a76ad0a.png)
+![image](https://user-images.githubusercontent.com/68471779/134156877-ec985355-cf77-4b7a-9bd1-f7418c1c2e16.png)
+![image](https://user-images.githubusercontent.com/68471779/134157158-4e399481-124c-4929-9f28-886e1b3c99cb.png)
+![image](https://user-images.githubusercontent.com/68471779/134156941-89384d0c-8fc6-4652-b9dd-49fdd8691e8b.png)
+![image](https://user-images.githubusercontent.com/68471779/134156776-5a94528a-3ba9-4b37-aa81-8bcde6671709.png)
+
 
 
 
