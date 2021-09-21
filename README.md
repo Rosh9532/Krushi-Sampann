@@ -18,6 +18,18 @@
 - Buyer can post his requirements through a form which will be visible to the farmer .
 - Buyer can view the contracts submitted by the farmer and proceed further and contact the farmer for contract formation.
 
+## Technologies
+- Mongodb
+- Nodejs
+- Expressjs
+- Reactjs
+
+
+## Contributors
+This project is developed as part of Academic Project.
+### Developers-[Roshni Chauhan](https://github.com/Rosh9532),[Krushna Dahake](https://github.com/krish10k),[Tejashree Ghude](https://github.com/teju1001)
+
+
 
 
 
