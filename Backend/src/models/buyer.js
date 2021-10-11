@@ -43,12 +43,7 @@ const buyerSchema=new mongoose.Schema({
 
 },{timestamps:true});
 
-buyerSchema.virtual('password')
-.set(function(password){
-    
-    this.hash_password=bcrypt.hashSync(password, 10)
-    
-});
+
 
 buyerSchema.virtual('fullName')
 .get(function(){

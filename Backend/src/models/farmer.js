@@ -68,12 +68,7 @@ const farmerSchema=new mongoose.Schema({
 
 },{timestamps:true});
 
-farmerSchema.virtual('password')
-.set(function(password){
-    
-    this.hash_password=bcrypt.hashSync(password, 10)
-    
-});
+
 
 farmerSchema.virtual('fullName')
 .get(function(){
