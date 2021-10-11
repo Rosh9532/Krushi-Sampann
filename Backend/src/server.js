@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const path = require('path');
+
 const env=require("dotenv");
 const cors = require('cors');
 
